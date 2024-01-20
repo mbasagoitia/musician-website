@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Bio from './Bio';
+import Teaching from './Teaching';
 
 function Home () {
     return (
@@ -11,6 +12,7 @@ function Home () {
           </div>
         </div>
         <Bio />
+        <Teaching />
       </Container>
     )
 }
