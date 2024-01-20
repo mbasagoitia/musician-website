@@ -1,6 +1,6 @@
 import './App.css';
-import Navigation from './components/Navigation';
-import Home from './pages/Home';
+import Navigation from './client/src/components/Navigation';
+import Home from './client/src/pages/Home';
 
 function App() {
   return (

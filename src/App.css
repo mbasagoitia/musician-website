@@ -7,16 +7,29 @@
   background: transparent;
   /* change to sticky/fixed once user has scrolled past home page */
   width: 100%;
+  z-index: 100;
 }
 
 #navbar a {
   color: white;
 }
 
-#hp-background {
+.overlay-container {
+  position: relative;
+  height: 100vh;
   background-image: url("../public/images/hp-background.jpg");
   background-size: cover;
-  height: 100vh;
+  color: white;
+}
+
+.overlay-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hp-content-wrapper {
@@ -24,4 +37,37 @@
   color: white;
   position: relative;
   top: 18rem;
+}
+
+.bio {
+  text-align: left;
+}
+
+.bio h1 {
+  text-align: center;
+}
+
+.bio-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.bio-photo img {
+  width: 100%;
+  max-width: 15rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 15rem;
+}
+
+@media (min-width: 520px) {
+  .bio-photo {
+    float: right;
+  }
+  
+  .bio-photo img {
+    margin-left: 2rem;
+  }
 }
