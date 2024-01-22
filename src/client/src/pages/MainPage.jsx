@@ -9,15 +9,17 @@ import Footer from '../components/Footer';
 
 function MainPage () {
     return (
+      <>
+        <Home />
         <Container fluid>
-          <Home />
           <Bio />
           <Teaching />
           <Samples />
           <BookMe />
+        </Container>
           <ImageSlider />
           <Footer />
-      </Container>
+      </>
     )
 }
 
