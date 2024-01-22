@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Bio from './Bio';
 import Teaching from './Teaching';
 import Samples from './Samples';
+import BookMe from './Book';
 
 function Home () {
     return (
@@ -15,6 +16,7 @@ function Home () {
         <Bio />
         <Teaching />
         <Samples />
+        <BookMe />
       </Container>
     )
 }

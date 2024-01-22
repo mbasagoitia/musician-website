@@ -104,7 +104,6 @@ button {
 }
 
 .thumbnail {
-  border-radius: 5px;
   margin-bottom: 1rem;
   width: 100%;
   max-width: 30rem;
@@ -135,7 +134,7 @@ button {
 @media (min-width: 850px) {
   .video-col {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .thumbnail {
