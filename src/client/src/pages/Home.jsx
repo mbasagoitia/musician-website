@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Bio from './Bio';
 import Teaching from './Teaching';
+import Samples from './Samples';
 
 function Home () {
     return (
@@ -13,6 +14,7 @@ function Home () {
         </div>
         <Bio />
         <Teaching />
+        <Samples />
       </Container>
     )
 }

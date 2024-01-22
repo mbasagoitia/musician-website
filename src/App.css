@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: gray !important;
+  color: white !important;
+  border: 1px solid gray !important;
 }
 
 #navbar {
@@ -55,24 +62,22 @@
   max-width: 15rem;
 }
 
-/* .teaching-row {
+.teaching-row {
   display: flex;
   justify-content: space-between;
-  margin: -10px;
-} */
+}
 
 .teaching-card {
-  flex: 0 0 calc(33.33% - 20px);
-  box-sizing: border-box;
-  position: relative;
-  /* overflow: hidden; */
-  margin: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: stretch; */
 }
 
 .teaching-img-container {
-  position: relative;
-  height: 0;
-  padding-top: 100%;
+  height: 22rem;
+  max-width: 20rem;
+  overflow: hidden;
+  margin: 2rem auto 1rem auto;
 }
 
 .teaching-img-container img {
@@ -84,6 +89,29 @@
 
 .teaching-card p {
   margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.videos-subtitle {
+  background-color: white;
+  padding: 5px 0;
+}
+
+.video-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumbnail {
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.thumbnail:nth-of-type(3) {
+  margin-bottom: 0;
 }
 
 @media (min-width: 520px) {
@@ -101,5 +129,22 @@
   
   .bio-photo img {
     margin-left: 2rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .video-col {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .thumbnail {
+    width: 32%;
+    max-width: none;
+    margin-bottom: 0;
+  }
+
+  .sample-videos {
+    background-color: black;
   }
 }

@@ -1,11 +1,10 @@
-import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 
 function Teaching() {
   return (
     <div className="teaching">
       <h1 className="my-4">Teaching</h1>
-      <Row className="d-flex">
+      <Row className="teaching-row">
         <Col sm={4}>
           <div className="teaching-card">
             <div className="teaching-img-container">
