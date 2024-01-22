@@ -1,8 +1,16 @@
 import { Row, Col, Button } from 'react-bootstrap';
+import { useState } from 'react';
 
 function Teaching() {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        setIsOpen(true);
+    }
+
   return (
-    <div className="teaching">
+    <div id="teaching" className="teaching">
       <h1 className="my-4">Teaching</h1>
       <Row className="teaching-row">
         <Col sm={4}>

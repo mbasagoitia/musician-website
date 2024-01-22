@@ -3,7 +3,7 @@ import YouTubeThumbnail from '../components/ytThumbnail';
 
 function Samples () {
     return (
-        <>
+        <div id="samples">
         <h1 className="my-4">Sample Videos</h1>
         <div className="sample-videos">
             <Row>
@@ -24,7 +24,7 @@ function Samples () {
                 </Col>
             </Row>
         </div>
-        </>
+        </div>
     )
 }
 

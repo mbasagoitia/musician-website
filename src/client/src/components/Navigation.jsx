@@ -2,12 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Navigation() {
+function Navigation({ navbarStyle }) {
   // When you hover over the navbar, add slight black overlay to entire page
   // Text gets some kind of effect on hover
   
   return (
-    <Navbar expand="sm" id="navbar" className="">
+    <Navbar expand="sm" id="navbar" style={navbarStyle}>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

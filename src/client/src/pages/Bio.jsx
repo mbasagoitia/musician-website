@@ -1,6 +1,15 @@
+import { Button } from 'react-bootstrap';
+
 function Bio () {
+
+    const externalLink = "https://digscholarship.unco.edu/dissertations/721/";
+
+    const openLink = () => {
+      window.open(externalLink, '_blank');
+    };
+
     return (
-        <div className="bio">
+        <div id="bio" className="bio">
             <h1 className="my-4">Bio</h1>
             <div className="bio-text">
                 <div className="bio-photo">
@@ -49,6 +58,9 @@ function Bio () {
                 at the Youth Symphony Orchestra of Kaiserslautern County. Additionally, she has established
                 her home violin studio in Otterbach, Germany.
                 </p>
+            </div>
+            <div className="d-flex justify-content-center">
+                <Button onClick={openLink}>View Dissertation</Button>
             </div>
         </div>
     )
