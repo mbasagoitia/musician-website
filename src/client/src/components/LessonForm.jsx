@@ -1,15 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import ReCAPTCHA from "react-google-recaptcha";
+import fetchCaptchaKey from '../helpers/fetchCaptchaKey';
 
 function LessonForm () {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phoneNumber: "",
-    message: "",
-    recaptchaValue: null,
-  });
+
+    const [captchaKey, setCaptchaKey] = useState(null);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        recaptchaValue: null,
+    });
+
+    useEffect(() => {
+        const key = fetchCaptchaKey();
+        setCaptchaKey(key);
+    }, [])
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,6 +28,8 @@ function LessonForm () {
     });
   };
 
+  // Consider making button inactive until captcha is complete and valid
+  
   const handleCaptchaChange = (value) => {
     setFormData({
       ...formData,
@@ -91,11 +102,12 @@ function LessonForm () {
       </Form.Group>
 
       <ReCAPTCHA
-        sitekey="your-recaptcha-site-key"
+        sitekey={captchaKey}
         onChange={handleCaptchaChange}
       />
 
       <Button id="submit-btn" type="submit">Submit</Button>
+
     </Form>
     </>
   );
