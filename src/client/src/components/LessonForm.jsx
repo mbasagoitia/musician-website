@@ -39,11 +39,11 @@ function LessonForm () {
 
   return (
     <>
-    <h1 className="mb-2">Lessons Request</h1>
-    <p>Fill out this form with any inquiries or to set up your first lesson!</p>
+    <h1 className="mb-2">Contact Me</h1>
+    <p>Fill out this form or contact me at belenhernandez.violin@gmail.com with any inquiries or to set up your first lesson!</p>
     <Form onSubmit={handleSubmit} className="mt-2">
       <Form.Group controlId="formName">
-        <Form.Label>Your Name</Form.Label>
+        <Form.Label className="visibility-hidden">Your Name</Form.Label>
         <Form.Control
           type="text"
           placeholder="Enter your name"
@@ -55,7 +55,7 @@ function LessonForm () {
       </Form.Group>
 
       <Form.Group controlId="formEmail">
-        <Form.Label>Email Address</Form.Label>
+        <Form.Label className="visibility-hidden">Email Address</Form.Label>
         <Form.Control
           type="email"
           placeholder="Enter your email"
@@ -67,7 +67,7 @@ function LessonForm () {
       </Form.Group>
 
       <Form.Group controlId="formPhoneNumber">
-        <Form.Label>Phone Number</Form.Label>
+        <Form.Label className="visibility-hidden">Phone Number</Form.Label>
         <Form.Control
           type="tel"
           placeholder="Enter your phone number"
@@ -78,7 +78,7 @@ function LessonForm () {
       </Form.Group>
 
       <Form.Group controlId="formMessage">
-        <Form.Label>Message</Form.Label>
+        <Form.Label className="visibility-hidden">Message</Form.Label>
         <Form.Control
           as="textarea"
           rows={3}

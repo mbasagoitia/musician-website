@@ -77,7 +77,7 @@ function Teaching() {
             <div className="teaching-img-container">
               <img src="images/headshot-6.jpg" alt="closeup of fingers playing violin" />
             </div>
-            <p>Contact Me for Lessons</p>
+            <p>Contact Me</p>
             <Button id="lesson-form" onClick={(e) => handleClick(e)}>Open Form</Button>
           </div>
         </Col>
