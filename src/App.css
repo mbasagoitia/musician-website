@@ -5,6 +5,10 @@
   color: #333333;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #diss-btn, #view-tp, #view-sp, #lesson-form, #bookme-btn {
   background-color: gray;
   color: white;
@@ -32,12 +36,45 @@ button:hover {
   transform: scale(1.2);
 }
 
-.overlay-container {
-  position: relative;
-  height: 100vh;
+#main-page {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.fixed-background {
   background-image: url("../public/images/hp-background.jpg");
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hp-content-wrapper {
+  text-align: center;
+  color: #fff;
+}
+
+#hp-title {
+  margin: 0;
+}
+
+#hp-subtitle {
+  margin: 10px 0;
+}
+
+
+.overlay-container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  text-align: center;
   color: white;
 }
 
@@ -51,13 +88,9 @@ button:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-#main-page {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
 .hp-content-wrapper {
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
   text-align: center;
   color: white;
   position: relative;
@@ -202,6 +235,10 @@ button:hover {
 }
 
 @media (min-width: 520px) {
+  
+  .fixed-background {
+    background-size: 120% auto;
+  }
   .bio {
     text-align: left;
   }
