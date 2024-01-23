@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/images
+public_folder: /images
+collections:
+  - name: home
+    label: Home
+    folder: public/content/pages
+    create: true
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: body
+        label: Body
+        widget: markdown
+site_config:
+  name: site-config
+  file: data/site-config.json
+  label: Site Configuration
+  create: true
+  delete: true
+  editor:
+    preview: true
+  fields:
+    - name: title
+      label: Site Title
+      widget: string
+    - name: metaDescription
+      label: Meta Description
+      widget: text
