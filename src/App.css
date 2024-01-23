@@ -5,21 +5,20 @@
   color: #333333;
 }
 
-button {
-  background-color: gray !important;
-  color: white !important;
-  border: 1px solid gray !important;
-  transition: transform 0.2s ease !important;
+#diss-btn, #view-tp, #view-sp, #lesson-form, #bookme-btn {
+  background-color: gray;
+  color: white;
+  border: 1px solid gray;
+  transition: transform 0.2s ease;
 }
 
 button:hover {
-  transform: scale(1.2) !important;
+  transform: scale(1.2);
 }
 
 #navbar {
   width: 100%;
-  z-index: 100;
-  transition: position 0.5s ease, background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .nav-link {
@@ -52,6 +51,12 @@ button:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
+#main-page {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
 .hp-content-wrapper {
   text-align: center;
   color: white;
@@ -69,6 +74,10 @@ button:hover {
   width: 100%;
   max-width: 15rem;
   border-radius: 5px;
+}
+
+.bio-photo img, .teaching-img-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .teaching-row {
@@ -168,7 +177,7 @@ button:hover {
   padding: 20px;
   width: 50vw;
   height: 80vh;
-  min-width: 200px;
+  min-width: 280px;
   overflow-y: scroll;
   border-radius: 5px;
   z-index: 2;
@@ -186,6 +195,10 @@ button:hover {
   font-size: 24px;
   cursor: pointer;
   color: #333333;
+}
+
+#teaching, #samples {
+  margin-top: 4rem;
 }
 
 @media (min-width: 520px) {

@@ -60,7 +60,7 @@ function Bio () {
                 </p>
             </div>
             <div className="d-flex justify-content-center">
-                <Button onClick={openLink}>View Dissertation</Button>
+                <Button onClick={openLink} id="diss-btn">View Dissertation</Button>
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 
 function MainPage () {
     return (
-      <>
+      <div id="main-page">
         <Home />
         <Container fluid>
           <Bio />
@@ -19,7 +19,7 @@ function MainPage () {
         </Container>
           <ImageSlider />
           <Footer />
-      </>
+      </div>
     )
 }
 

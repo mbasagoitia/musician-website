@@ -1,12 +1,19 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function Navigation({ navbarStyle }) {
+function Navigation({ navbarStyle, navbarExpanded, setNavbarExpanded }) {
+
+  const handleNavbarToggle = () => {
+    setNavbarExpanded(!navbarExpanded);
+    console.log(navbarExpanded);
+  };
+
   return (
-    <Navbar expand="sm" id="navbar" style={navbarStyle}>
+    <Navbar expand="sm" id="navbar" style={navbarStyle} expanded={navbarExpanded} className={navbarExpanded ? 'navbar-dark open-navbar' : 'navbar-dark'}>
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto w-100 d-flex justify-content-between">
             <Nav.Link href="#home">Home</Nav.Link>

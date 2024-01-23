@@ -9,10 +9,10 @@ function BookMe () {
 
     return (
         <div id="book">
-        <h1 className="my-4">
-            Book Me for a Performance or Event
-        </h1>
-        <Button onClick={openLink}>Go To Form</Button>
+            <h1 className="my-4">
+                Book Me for a Performance or Event
+            </h1>
+            <Button id="bookme-btn" onClick={openLink}>Go To Form</Button>
         </div>
     )
 }

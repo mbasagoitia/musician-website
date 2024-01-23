@@ -41,7 +41,6 @@ function Teaching() {
         };
     }, [modalOpen]);
 
-
   return (
     <>
     <div className={`modal-bg ${modalOpen ? "modal-open" : "modal-closed"}`}>
