@@ -1,7 +1,7 @@
 function StudioPolicy () {
     return (
         <div className="studio-policy">
-            <h1>Studio Policy</h1>
+            <h1 className="mb-4">Studio Policy</h1>
             <ul>
                 <li>
                 30/45/60 minutes in-person or virtual lessons offered.

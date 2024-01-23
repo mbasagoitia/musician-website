@@ -38,7 +38,10 @@ function LessonForm () {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <>
+    <h1 className="mb-2">Lessons Request</h1>
+    <p>Fill out this form with any inquiries or to set up your first lesson!</p>
+    <Form onSubmit={handleSubmit} className="mt-2">
       <Form.Group controlId="formName">
         <Form.Label>Your Name</Form.Label>
         <Form.Control
@@ -71,7 +74,6 @@ function LessonForm () {
           name="phoneNumber"
           value={formData.phoneNumber}
           onChange={handleChange}
-          required
         />
       </Form.Group>
 
@@ -95,6 +97,7 @@ function LessonForm () {
 
       <Button type="submit">Submit</Button>
     </Form>
+    </>
   );
 };
 

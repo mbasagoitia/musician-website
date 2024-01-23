@@ -1,5 +1,5 @@
 import { Row, Col, Button } from 'react-bootstrap';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TeachingPhilosophy from '../components/TeachingPhilosophy';
 import StudioPolicy from '../components/StudioPolicy';
 import LessonForm from '../components/LessonForm';
@@ -14,14 +14,41 @@ function Teaching() {
         setComponent(e.target.id);
     }
 
+    const handleCloseModal = () => {
+        setModalOpen(false);
+        setComponent(null);
+      };
+
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (modalOpen && e.target.classList.contains("modal-bg")) {
+                handleCloseModal();
+            }
+        };
+
+        const handleKeyPress = (e) => {
+            if (modalOpen && e.key === "Escape") {
+                handleCloseModal();
+            }
+        };
+
+        document.addEventListener("mousedown", handleOutsideClick);
+        document.addEventListener("keydown", handleKeyPress);
+
+        return () => {
+            document.removeEventListener("mousedown", handleOutsideClick);
+            document.removeEventListener("keydown", handleKeyPress);
+        };
+    }, [modalOpen]);
+
+
   return (
     <>
-    <div className={`modal-bg ${modalOpen ? "modal-open" : ""}`}>
+    <div className={`modal-bg ${modalOpen ? "modal-open" : "modal-closed"}`}>
       {modalOpen && (
         <div className="modal-content">
-            <div className="modal-content">
-                {component === "view-tp" ? <TeachingPhilosophy /> : component === "view-sp" ? <StudioPolicy /> : component === "lesson-form" ? <LessonForm /> : null}
-            </div>
+                <span onClick={handleCloseModal} aria-hidden="true" className="close-button">&times;</span>
+            {component === "view-tp" ? <TeachingPhilosophy /> : component === "view-sp" ? <StudioPolicy /> : component === "lesson-form" ? <LessonForm /> : null}
         </div>
       )}
     </div>
