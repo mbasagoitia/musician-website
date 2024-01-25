@@ -272,9 +272,6 @@ button:hover {
     margin-left: 2rem;
   }
 
-  .carousel-item {
-    height: 400px;
-  }
 }
 
 @media (min-width: 850px) {
@@ -292,10 +289,6 @@ button:hover {
   .sample-videos {
     background-color: black;
     border-bottom: 5px solid black;
-  }
-
-  .carousel-item {
-    height: 560px;
   }
 
 }
