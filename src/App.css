@@ -66,10 +66,13 @@ button:hover {
   background-size: cover;
 }
 
-
 .hp-content-wrapper {
+  transform: translateY(-50%);
+  transition: transform 0.5s ease;
   text-align: center;
-  color: #fff;
+  color: white;
+  position: relative;
+  top: 18rem;
 }
 
 #hp-title {
@@ -79,7 +82,6 @@ button:hover {
 #hp-subtitle {
   margin: 10px 0;
 }
-
 
 .overlay-container {
   position: absolute;
@@ -101,28 +103,14 @@ button:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.hp-content-wrapper {
-  transform: translateY(-50%);
-  transition: transform 0.5s ease;
-  text-align: center;
-  color: white;
-  position: relative;
-  top: 18rem;
-}
-
 .bio-photo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.bio-photo img {
   width: 100%;
   max-width: 15rem;
   border-radius: 5px;
+  margin-bottom: 1.5rem;
 }
 
-.bio-photo img, .teaching-img-container {
+.bio-photo, .teaching-img-container {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -267,7 +255,7 @@ button:hover {
     float: right;
   }
   
-  .bio-photo img {
+  .bio-photo {
     margin-left: 2rem;
   }
 
