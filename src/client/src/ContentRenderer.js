@@ -20,9 +20,9 @@ function ContentRenderer(props) {
                 const [className, text] = parts[1].split('"}');
                 if (line.includes('![')) {
                     // Handle images
-                    const imagePath = line.match(/\!\[.*\]\(([^)]+)\)/)[1];
+                    const imagePath = line.match(/!\[.*\]\(([^)]+)\)/)[1];
                     output.push(
-                        <img key={output.length} src={imagePath} alt="Image" className={className} />
+                        <img key={output.length} src={imagePath} alt="" className={className} />
                     );
                 } else {
                     // Handle other content
