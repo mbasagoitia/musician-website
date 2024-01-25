@@ -220,9 +220,8 @@ button:hover {
 .modal-content {
   margin-top: 4rem;
   padding: 20px;
-  width: 50vw;
+  width: 90vw;
   height: 80vh;
-  min-width: 300px;
   overflow-y: scroll;
   border-radius: 5px;
   z-index: 2;
@@ -270,6 +269,11 @@ button:hover {
   
   .bio-photo img {
     margin-left: 2rem;
+  }
+
+  .modal-content {
+    width: 70vw;
+    max-width: 750px;
   }
 
 }
