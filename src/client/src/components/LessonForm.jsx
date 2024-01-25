@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import ReCAPTCHA from "react-google-recaptcha";
 import fetchCaptchaKey from '../helpers/fetchCaptchaKey';
+import submitFormData from '../helpers/submitFormData';
 
 function LessonForm () {
 
@@ -20,16 +21,16 @@ function LessonForm () {
         setCaptchaKey(key);
     }, [])
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+        ...formData,
+        [name]: value,
+        });
+    };
 
   // Consider making button inactive until captcha is complete and valid
-  
+
   const handleCaptchaChange = (value) => {
     setFormData({
       ...formData,
@@ -43,7 +44,10 @@ function LessonForm () {
     if (formData.recaptchaValue) {
       // Send form info to database
       console.log('Form submitted:', formData);
+      // Make POST request to api endpoint that triggers lambda function sendAndStore
+        submitFormData(formData);
     } else {
+        // Make this something other than an alert
       alert('Please complete the captcha test.');
     }
   };
