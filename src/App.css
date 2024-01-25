@@ -193,7 +193,7 @@ button:hover {
 
 .footer-copyright {
   color: grey;
-  flex-basis: 50%;
+  width: 90%;
   padding: 8px 0;
 }
 
@@ -302,6 +302,10 @@ button:hover {
     justify-content: space-between;
     font-size: 1rem;
     padding: 1rem;
+  }
+
+  .footer-copyright {
+    flex-basis: 50%;
   }
 
   .footer-links {
