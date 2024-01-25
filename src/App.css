@@ -51,6 +51,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-attachment: scroll;
 }
 
 .fixed-background:before {
@@ -72,7 +73,7 @@ button:hover {
   text-align: center;
   color: white;
   position: relative;
-  top: 18rem;
+  top: 17rem;
 }
 
 #hp-title {
@@ -238,9 +239,17 @@ button:hover {
 }
 
 @media (min-width: 520px) {
+
+  #hp-title {
+    font-size: 2rem;
+  }
+  
+  #hp-subtitle {
+    font-size: 1.2rem;
+  }
   
   .fixed-background:before {
-    transform: scale(1.2);
+    background-attachment: fixed;
   }
 
   .bio {
