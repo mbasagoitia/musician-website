@@ -1,14 +1,14 @@
 .App {
   text-align: center;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
   color: #333333;
   font-family: 'Lato', sans-serif;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
 }
 
 #diss-btn, #view-tp, #view-sp, #lesson-form, #bookme-btn, #submit-btn {
@@ -45,16 +45,27 @@ button:hover {
 }
 
 .fixed-background {
-  background-image: url("../public/images/hp-background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
+
+.fixed-background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/images/hp-background.jpg");
+  background-position: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .hp-content-wrapper {
   text-align: center;
@@ -141,7 +152,7 @@ button:hover {
 }
 
 .videos-subtitle {
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
   padding: 5px 0;
 }
 
@@ -162,8 +173,6 @@ button:hover {
 }
 
 .carousel-item {
-  height: 200px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -213,11 +222,11 @@ button:hover {
   padding: 20px;
   width: 50vw;
   height: 80vh;
-  min-width: 280px;
+  min-width: 300px;
   overflow-y: scroll;
   border-radius: 5px;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: #eaeaea;
   color: #333333;
   position: relative;
 }
@@ -243,9 +252,10 @@ button:hover {
 
 @media (min-width: 520px) {
   
-  .fixed-background {
-    background-size: 120% auto;
+  .fixed-background:before {
+    transform: scale(1.2);
   }
+
   .bio {
     text-align: left;
   }
