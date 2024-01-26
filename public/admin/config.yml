@@ -4,17 +4,57 @@ backend:
 media_folder: public/images
 public_folder: /images
 collections:
+  - name: home
+    label: Home
+    folder: 'content/pages'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+      - { label: 'Background Image', name: 'backgroundImage', widget: 'image' }
   - name: bio
     label: Bio
     folder: public/content/pages
     create: true
     fields:
-      - name: title
-        label: Title
-        widget: string
-      - name: body
-        label: Body
-        widget: markdown
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: teaching
+    label: Teaching
+    folder: public/content/pages
+    create: true
+    fields:
+      - { label: 'Teaching Philosophy', name: 'teachingPhilosophy', widget: 'markdown' }
+      - { label: 'tp-image', name: 'tp-image', widget: 'image' }
+      - { label: 'Studio Policy', name: 'studioPolicy', widget: 'markdown' }
+      - { label: 'sp-image', name: 'sp-image', widget: 'image' }
+  - name: samples
+    label: Sample Videos
+    folder: public/content/pages
+    create: true
+    fields:
+    - { label: 'Videos', name: 'videos', widget: 'list', fields:
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+          - { label: 'Video ID', name: 'videoId', widget: 'string' }
+    }
+  - name: sliding images
+  - label: Sliding Images
+  - folder: public/content/pages
+  - create: true
+  - fields:
+      - { label: 'Images', name: 'images', widget: 'list', fields:
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+          - { label: 'Image', name: 'image', widget: 'image' }
+          - { label: 'Alt Text', name: 'alt', widget: 'string' }
+        }
 site_config:
   name: site-config
   file: data/site-config.json
