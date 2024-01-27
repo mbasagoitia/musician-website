@@ -1,34 +1,5 @@
 ---
-teaching_philosophy: >-
-  <p>Each person comes to music with different expectations and goals. As a
-  teacher who has worked with early beginners as well as adult students, I try
-  to understand where the student is coming from and help them discover where
-  they want to project themselves. I believe that sharing my genuine passion for
-  music and my love for the violin is the best starting point.  I think of
-  teaching as a discovery journey. The teacher's role should be of assistance in
-  discovering the traditions of the great violinists as well as finding their
-  own voice and expression. I commit to help my students to explore a wide
-  variety of violin playing traditions (violin schools and techniques) and
-  styles (composers and genres). In addition to this, I encourage them to
-  develop their own musical personality and to be aware of their bodies as they
-  engage in sound production.</p> <p>I incorporate body mapping concepts such as
-  naturalness as a guiding principle (finding what is comfortable and
-  efficient), interdependence of all elements involved in violin playing
-  (proportions and balance), and the relationship of mind to muscles (mental
-  control over physical movement).</p><p>In my training, I have discovered that
-  understanding the language of music from an analytical point of view has
-  helped me to better express myself. I encourage musical analysis to improve
-  memorization, coherence, and expression.</p> <p>I strongly believe that music
-  should ultimately connect the community functioning as a social unifier while
-  celebrating diversity. In my studio I intend to create a comfortable
-  atmosphere for everyone to share who they are and explore music together.</p>
-studio_policy: >-
-  <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
-  payment method options--Paypal, Venmo, Zelle, cash, check, etc. </li> <li>
-  Reschedule at least 24 hours before the start of the  lesson. </li> <li>
-  Practice, practice, practice! Be prepared for lessons.</li>
-tp_image: /images/headshot-4.jpg
-sp_image: /images/headshot-1.jpg
-contact_image: /images/headshot-6.jpg
+bio_image: /images/headshot-2.jpg
+bio: "<p>Dr. Belén Hernández started her musical journey in her native Argentina. She graduated with a bachelor’s degree in violin performance from the Universidad Nacional de Tucumán. She then joined the Orquesta Sinfónica de Salta in 2007 as a full-time violinist.</p>\r\n\n\r\n\n<p>In 2010 she received the Tarr Award (full tuition scholarship) at Carson-Newman University where she completed a BM in Music Theory, applied violin (2014). During her undergraduate studies, Dr. Hernández was granted the Presser Scholar Award, and became a member of multiple national honor societies, including Pi Kappa Lambda, Alpha Chi, and Omicron Delta Kappa.</p>\r\n\n\r\n\n<p>Dr. Hernández continued her higher education studies at the University of Northern Colorado where she earned a MM in Violin Performance (2016) and Doctor of Arts in Violin Performance with a secondary emphasis in Orchestral Conducting (2020). Her doctoral dissertation, “Life and Legacy of Luis Gianneo: A Comprehensive Study of His Compositions for Violin,” reflects her deep love for Argentine music.</p>\r\n\n\r\n\n<p>She has performed in many orchestras in Argentina and the United States. In the United States, she has performed with the Greeley Philharmonic Orchestra (CO), Colorado MahlerFest, Cheyenne Symphony Orchestra (WY), El Paso Symphony Orchestra (TX), Las Cruces Symphony Orchestra (NM), Ohio Light Opera (OH), Symphony of the Mountains (TN), among others.</p>\r\n\n\r\n\n<p>Dr. Hernández has been one of the violin teachers at Centro Andino para la Educación y la Cultura (CApEC) in Tilcara, Argentina (2008-2010), and Flourish Music Academy in Greeley, Colorado (2017-2019). She has coached orchestral sectionals at the Denver School of the Arts, Denver Young Artists Symphony, Cherry Creek Honor  Orchestra, among others. Dr. Hernández was the orchestra director at Horizon Middle School in El Paso, Texas, from 2019 until 2022. Under her guidance, this brand-new orchestra program, was awarded Superior rating at UIL Concert and Sight-Reading Contest.</p>\r\n\n\r\n\n<p>Dr. Belén Hernández is currently teaching violin at the Kreismusikschule Kaiserslautern and is serving as the violin coach and assistant conductor at the Youth Symphony Orchestra of Kaiserslautern County. Additionally, she has established her home violin studio in Otterbach, Germany.</p>"
 ---
 
