@@ -70,7 +70,7 @@ collections:
         name: 'id_5'
         widget: 'string'
       - label: 'YouTube ID #6'
-        name: 'id_5'
+        name: 'id_6'
         widget: 'string'
   - name: sliding_images
     label: Sliding Images
