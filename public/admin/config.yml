@@ -10,10 +10,10 @@ collections:
     create: true
     fields:
       - label: 'Title'
-        name: 'title'
+        name: 'hpTitle'
         widget: 'string'
       - label: 'Subtitle'
-        name: 'subtitle'
+        name: 'hpSubtitle'
         widget: 'string'
       - label: 'Background Image'
         name: 'backgroundImage'
