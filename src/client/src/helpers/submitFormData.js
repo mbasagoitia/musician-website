@@ -1,7 +1,13 @@
+import fetchConfig from "./fetchConfig";
+
 const submitFormData = async (formData) => {
   try {
+    // Fetch configuration
+    const config = await fetchConfig();
+    const { storeDataEndpoint, sendEmailEndpoint } = config;
+
     // Store data in the database
-    const storeResponse = await fetch('store-data-api-endpoint', {
+    const storeResponse = await fetch(storeDataEndpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -14,7 +20,7 @@ const submitFormData = async (formData) => {
     }
 
     // Send email to client
-    const sendEmailResponse = await fetch('send-email-api-endpoint', {
+    const sendEmailResponse = await fetch(sendEmailEndpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

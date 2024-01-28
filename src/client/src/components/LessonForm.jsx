@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import ReCAPTCHA from "react-google-recaptcha";
-import fetchCaptchaKey from '../helpers/fetchCaptchaKey';
+import fetchConfig from '../helpers/fetchConfig';
 import submitFormData from '../helpers/submitFormData';
 
 function LessonForm () {
@@ -18,9 +18,18 @@ function LessonForm () {
     });
 
     useEffect(() => {
-        const key = fetchCaptchaKey();
-        setCaptchaKey(key);
-    }, [])
+      const fetchData = async () => {
+        try {
+          const config = await fetchConfig();
+          const { captchaKey } = config;
+          setCaptchaKey(captchaKey);
+        } catch (error) {
+          console.error('Error fetching configuration:', error);
+        }
+      };
+    
+      fetchData();
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -35,7 +44,7 @@ function LessonForm () {
   const handleCaptchaChange = (value) => {
     setFormData({
       ...formData,
-      recaptchaValue: value,
+      recaptchaValue: value
     });
   };
 
@@ -117,7 +126,7 @@ function LessonForm () {
           onChange={handleCaptchaChange}
         />
   
-        <Button id="submit-btn" type="submit">Submit</Button>
+        <Button id="submit-btn" type="submit" disabled={!formData.recaptchaValue}>Submit</Button>
   
       </Form>
       </>
