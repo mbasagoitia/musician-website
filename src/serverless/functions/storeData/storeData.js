@@ -1,7 +1,6 @@
 const mysql = require('mysql2');
-const sgMail = require('@sendgrid/mail');
-const dotenv = require("dotenv");
 const sanitizeHtml = require('sanitize-html');
+const dotenv = require("dotenv");
 
 dotenv.config();
 
@@ -27,39 +26,31 @@ exports.handler = async (event) => {
     const query = 'INSERT INTO form_submissions (name, email, phone, message) VALUES (?, ?, ?, ?)';
     const values = [sanitizedName, sanitizedEmail, sanitizedPhoneNumber, sanitizedMessage];
 
-    pool.query(query, values, (error, results) => {
+    const results = await new Promise((resolve, reject) => {
+      pool.query(query, values, (error, results) => {
         if (error) {
           console.error('Error inserting into the database:', error);
-          return {
-            statusCode: 500,
-            body: JSON.stringify({ message: 'Error inserting into the database' }),
-          };
+          reject(error);
+        } else {
+          // Display this to user
+          console.log('Inserted into the database:', results);
+          resolve(results);
         }
-        console.log('Inserted into the database:', results);
-        pool.end();
-
-        // Send email notification USE A TEMPLATE
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-        const msg = {
-          to: 'marika.basagoitia@gmail.com',
-          from: 'belenhernandez.violin@gmail.com',
-          subject: 'New Form Submission',
-          text: 'You have a new form submission. Details: ' + JSON.stringify(formData),
-        };
-        sgMail.send(msg)
-        .then(() => console.log('Email sent'))
-        .catch(error => console.error(error));
-
-        return {
-          statusCode: 200,
-          body: JSON.stringify({ message: 'Form submitted successfully' }),
-        };
+      });
     });
+
+    pool.end();
+    
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: 'Form submitted successfully',
+        insertId: results.insertId,
+      }),
+    };
+
   } catch (error) {
     console.error('Error parsing form data:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: 'Error submitting form' }),
-    };
+    throw new Error('Error submitting form');
   }
 };

@@ -39,15 +39,19 @@ function LessonForm () {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (formData.recaptchaValue) {
       // Send form info to database
-      console.log('Form submitted:', formData);
-      // Make POST request to api endpoint that triggers lambda function sendAndStore
-        submitFormData(formData);
-        setFormSubmitted(true);
+      console.log('Attempting to submit form:', formData);
+      // Make POST request to api endpoint that triggers lambda functions store data and send email
+      try {
+        const result = await submitFormData(formData);
+        console.log(result); // 'success'
+      } catch (error) {
+        console.error('Error submitting form:', error);
+      }
     } else {
         // Make this something other than an alert
       alert('Please complete the captcha test.');
