@@ -229,7 +229,6 @@ button:hover {
 
 .modal-content::-webkit-scrollbar-track {
   background-color: transparent;
-  border-radius: 5px;
 }
 
 .close-button {

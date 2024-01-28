@@ -7,7 +7,7 @@ import submitFormData from '../helpers/submitFormData';
 function LessonForm () {
 
     const [captchaKey, setCaptchaKey] = useState(null);
-    const [formSubmitted, setFormSubmitted] = useState(true);
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -47,6 +47,7 @@ function LessonForm () {
       console.log('Form submitted:', formData);
       // Make POST request to api endpoint that triggers lambda function sendAndStore
         submitFormData(formData);
+        setFormSubmitted(true);
     } else {
         // Make this something other than an alert
       alert('Please complete the captcha test.');
