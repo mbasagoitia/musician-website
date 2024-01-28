@@ -14,6 +14,9 @@ exports.handler = async (event) => {
         storeDataEndpoint,
         sendEmailEndpoint
       }),
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
     };
   } catch (error) {
     return {

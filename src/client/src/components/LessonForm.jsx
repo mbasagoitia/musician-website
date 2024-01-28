@@ -39,8 +39,6 @@ function LessonForm () {
         });
     };
 
-  // Consider making button inactive until captcha is complete and valid
-
   const handleCaptchaChange = (value) => {
     setFormData({
       ...formData,
