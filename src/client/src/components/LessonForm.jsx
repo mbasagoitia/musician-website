@@ -7,7 +7,7 @@ import submitFormData from '../helpers/submitFormData';
 function LessonForm () {
 
     const [captchaKey, setCaptchaKey] = useState(null);
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    const [formSubmitted, setFormSubmitted] = useState(true);
 
     const [formData, setFormData] = useState({
         name: "",
