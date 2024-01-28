@@ -57,7 +57,9 @@ function LessonForm () {
       // Make POST request to api endpoint that triggers lambda functions store data and send email
       try {
         const result = await submitFormData(formData);
-        console.log(result); // 'success'
+        if (result === 'success'){
+          setFormSubmitted(true);
+        }
       } catch (error) {
         console.error('Error submitting form:', error);
       }
