@@ -26,6 +26,9 @@ collections:
       - label: 'Bio Image'
         name: 'bio_image'
         widget: 'image'
+      - label: 'Bio'
+      name: 'body'
+      widget: 'markdown'
   - name: teaching
     label: Teaching
     folder: public/content/pages
