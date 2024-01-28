@@ -6,7 +6,7 @@ public_folder: /images
 collections:
   - name: home
     label: Home
-    folder: 'content/pages'
+    folder: 'public/content/pages'
     create: true
     fields:
       - label: 'Title'
@@ -20,7 +20,7 @@ collections:
         widget: 'image'
   - name: bio
     label: Bio
-    folder: 'content/pages'
+    folder: 'public/content/pages'
     create: true
     fields:
       - label: 'Bio Image'
@@ -31,7 +31,7 @@ collections:
         widget: 'markdown'
   - name: teaching
     label: Teaching
-    folder: 'content/pages'
+    folder: 'public/content/pages'
     create: true
     fields:
       - label: 'Teaching Philosophy'
@@ -51,7 +51,7 @@ collections:
         widget: 'image'
   - name: samples
     label: Sample Videos
-    folder: 'content/pages'
+    folder: 'public/content/pages'
     create: true
     fields:
       - label: 'YouTube ID #1'
@@ -74,7 +74,7 @@ collections:
         widget: 'string'
   - name: sliding_images
     label: Sliding Images
-    folder: 'content/pages'
+    folder: 'public/content/pages'
     create: true
     fields:
       - label: 'Images'
