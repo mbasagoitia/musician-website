@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import fetchConfig from '../helpers/fetchConfig';
-import submitFormData from '../helpers/submitFormData';
+// import submitFormData from '../helpers/submitFormData';
 
 function LessonForm () {
 
-    const [captchaKey, setCaptchaKey] = useState(null);
+    // const [captchaKey, setCaptchaKey] = useState(null);
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const [formData, setFormData] = useState({
@@ -17,34 +17,34 @@ function LessonForm () {
         recaptchaValue: null,
     });
 
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const config = await fetchConfig();
-          const { captchaKey } = config;
-          setCaptchaKey(captchaKey);
-        } catch (error) {
-          console.error('Error fetching configuration:', error);
-        }
-      };
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     try {
+    //       const config = await fetchConfig();
+    //       const { captchaKey } = config;
+    //       setCaptchaKey(captchaKey);
+    //     } catch (error) {
+    //       console.error('Error fetching configuration:', error);
+    //     }
+    //   };
     
-      fetchData();
-    }, []);
+    //   fetchData();
+    // }, []);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-        ...formData,
-        [name]: value,
-        });
-    };
+  //   const handleChange = (e) => {
+  //       const { name, value } = e.target;
+  //       setFormData({
+  //       ...formData,
+  //       [name]: value,
+  //       });
+  //   };
 
-  const handleCaptchaChange = (value) => {
-    setFormData({
-      ...formData,
-      recaptchaValue: value
-    });
-  };
+  // const handleCaptchaChange = (value) => {
+  //   setFormData({
+  //     ...formData,
+  //     recaptchaValue: value
+  //   });
+  // };
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -72,7 +72,7 @@ function LessonForm () {
       <>
       <h1 className="mb-2">Contact Me</h1>
       <p>Fill out this form or contact me at belenhernandez.violin@gmail.com with any inquiries or to set up your first lesson!</p>
-      <Form className="mt-2" netlify name="Contact Form" method="POST">
+      <Form className="mt-2" netlify name="Contact Form" method="POST" onSubmit={() => setFormSubmitted(true)}>
       <input type="hidden" name="form-name" value="Contact Form" />
         <Form.Group controlId="formName">
           <Form.Label className="visibility-hidden">Your Name</Form.Label>
