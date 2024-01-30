@@ -1,7 +1,6 @@
 import { Form, Button } from 'react-bootstrap';
 
 function LessonForm () {
-
   return (
       <>
       <h1 className="mb-2">Contact Me</h1>
@@ -12,7 +11,7 @@ function LessonForm () {
           <Form.Label className="visibility-hidden">Your Name</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Enter your name"
+            placeholder="Your Name"
             name="name"
             required
           />
@@ -22,7 +21,7 @@ function LessonForm () {
           <Form.Label className="visibility-hidden">Email Address</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter your email"
+            placeholder="Email"
             name="email"
             required
           />
@@ -32,7 +31,7 @@ function LessonForm () {
           <Form.Label className="visibility-hidden">Phone Number</Form.Label>
           <Form.Control
             type="tel"
-            placeholder="Enter your phone number"
+            placeholder="Phone Number"
             name="phoneNumber"
           />
         </Form.Group>
@@ -42,7 +41,7 @@ function LessonForm () {
           <Form.Control
             as="textarea"
             rows={3}
-            placeholder="Enter your message"
+            placeholder="Message"
             name="message"
             required
           />
