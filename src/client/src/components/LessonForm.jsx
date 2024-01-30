@@ -7,7 +7,7 @@ import { Form, Button } from 'react-bootstrap';
 function LessonForm () {
 
     // const [captchaKey, setCaptchaKey] = useState(null);
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    // const [formSubmitted, setFormSubmitted] = useState(false);
 
     // const [formData, setFormData] = useState({
     //     name: "",
@@ -68,11 +68,11 @@ function LessonForm () {
   // };
 
   return (
-    !formSubmitted ? (
+    (
       <>
       <h1 className="mb-2">Contact Me</h1>
       <p>Fill out this form or contact me at belenhernandez.violin@gmail.com with any inquiries or to set up your first lesson!</p>
-      <Form className="mt-2" netlify name="Contact Form" method="POST" onSubmit={() => setFormSubmitted(true)}>
+      <Form className="mt-2" netlify name="Contact Form" method="POST">
       <input type="hidden" name="form-name" value="Contact Form" />
         <Form.Group controlId="formName">
           <Form.Label className="visibility-hidden">Your Name</Form.Label>
@@ -122,11 +122,6 @@ function LessonForm () {
         <Button id="submit-btn" className="mt-4" type="submit">Submit</Button>
       </Form>
       </>
-    ) : (
-      <div className="d-flex flex-column justify-content-center h-100">
-      <h1>Thank you for your message!</h1>
-      <p>I will be in touch shortly.</p>
-      </div>
     )
   );
 };
