@@ -1,77 +1,11 @@
-// import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-// import ReCAPTCHA from "react-google-recaptcha";
-// import fetchConfig from '../helpers/fetchConfig';
-// import submitFormData from '../helpers/submitFormData';
 
 function LessonForm () {
 
-    // const [captchaKey, setCaptchaKey] = useState(null);
-    // const [formSubmitted, setFormSubmitted] = useState(false);
-
-    // const [formData, setFormData] = useState({
-    //     name: "",
-    //     email: "",
-    //     phoneNumber: "",
-    //     message: "",
-    //     recaptchaValue: null,
-    // });
-
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     try {
-    //       const config = await fetchConfig();
-    //       const { captchaKey } = config;
-    //       setCaptchaKey(captchaKey);
-    //     } catch (error) {
-    //       console.error('Error fetching configuration:', error);
-    //     }
-    //   };
-    
-    //   fetchData();
-    // }, []);
-
-  //   const handleChange = (e) => {
-  //       const { name, value } = e.target;
-  //       setFormData({
-  //       ...formData,
-  //       [name]: value,
-  //       });
-  //   };
-
-  // const handleCaptchaChange = (value) => {
-  //   setFormData({
-  //     ...formData,
-  //     recaptchaValue: value
-  //   });
-  // };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-    
-  //   if (formData.recaptchaValue) {
-  //     // Send form info to database
-  //     console.log('Attempting to submit form:', formData);
-  //     // Make POST request to api endpoint that triggers lambda functions store data and send email
-  //     try {
-  //       const result = await submitFormData(formData);
-  //       if (result === 'success'){
-  //         setFormSubmitted(true);
-  //       }
-  //     } catch (error) {
-  //       console.error('Error submitting form:', error);
-  //     }
-  //   } else {
-  //       // Make this something other than an alert
-  //     alert('Please complete the captcha test.');
-  //   }
-  // };
-
   return (
-    (
       <>
       <h1 className="mb-2">Contact Me</h1>
-      <p>Fill out this form or contact me at belenhernandez.violin@gmail.com with any inquiries or to set up your first lesson!</p>
+      <p>Fill out this form with any inquiries or to set up your first lesson!</p>
       <Form className="mt-2" netlify name="Contact Form" method="POST">
       <input type="hidden" name="form-name" value="Contact Form" />
         <Form.Group controlId="formName">
@@ -112,17 +46,10 @@ function LessonForm () {
             name="message"
             required
           />
-        </Form.Group>
-  
-        {/* <ReCAPTCHA
-          sitekey={captchaKey}
-          onChange={handleCaptchaChange}
-        /> */}
-  
+        </Form.Group>  
         <Button id="submit-btn" className="mt-4" type="submit">Submit</Button>
       </Form>
       </>
-    )
   );
 };
 
