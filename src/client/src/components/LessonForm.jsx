@@ -46,41 +46,41 @@ function LessonForm () {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
     
-    if (formData.recaptchaValue) {
-      // Send form info to database
-      console.log('Attempting to submit form:', formData);
-      // Make POST request to api endpoint that triggers lambda functions store data and send email
-      try {
-        const result = await submitFormData(formData);
-        if (result === 'success'){
-          setFormSubmitted(true);
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error);
-      }
-    } else {
-        // Make this something other than an alert
-      alert('Please complete the captcha test.');
-    }
-  };
+  //   if (formData.recaptchaValue) {
+  //     // Send form info to database
+  //     console.log('Attempting to submit form:', formData);
+  //     // Make POST request to api endpoint that triggers lambda functions store data and send email
+  //     try {
+  //       const result = await submitFormData(formData);
+  //       if (result === 'success'){
+  //         setFormSubmitted(true);
+  //       }
+  //     } catch (error) {
+  //       console.error('Error submitting form:', error);
+  //     }
+  //   } else {
+  //       // Make this something other than an alert
+  //     alert('Please complete the captcha test.');
+  //   }
+  // };
 
   return (
     !formSubmitted ? (
       <>
       <h1 className="mb-2">Contact Me</h1>
       <p>Fill out this form or contact me at belenhernandez.violin@gmail.com with any inquiries or to set up your first lesson!</p>
-      <Form onSubmit={handleSubmit} className="mt-2">
+      <Form className="mt-2" netlify name="Contact Form" method="POST">
+      <input type="hidden" name="form-name" value="Contact Form" />
         <Form.Group controlId="formName">
           <Form.Label className="visibility-hidden">Your Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter your name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
+            value="Name"
             required
           />
         </Form.Group>
@@ -91,8 +91,7 @@ function LessonForm () {
             type="email"
             placeholder="Enter your email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value="Email"
             required
           />
         </Form.Group>
@@ -103,8 +102,7 @@ function LessonForm () {
             type="tel"
             placeholder="Enter your phone number"
             name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
+            value="Phone Number"
           />
         </Form.Group>
   
@@ -115,19 +113,17 @@ function LessonForm () {
             rows={3}
             placeholder="Enter your message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
+            value="Your Message"
             required
           />
         </Form.Group>
   
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey={captchaKey}
           onChange={handleCaptchaChange}
-        />
+        /> */}
   
-        <Button id="submit-btn" type="submit" disabled={!formData.recaptchaValue}>Submit</Button>
-  
+        <Button id="submit-btn" type="submit">Submit</Button>
       </Form>
       </>
     ) : (
