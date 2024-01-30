@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 // import ReCAPTCHA from "react-google-recaptcha";
-import fetchConfig from '../helpers/fetchConfig';
+// import fetchConfig from '../helpers/fetchConfig';
 // import submitFormData from '../helpers/submitFormData';
 
 function LessonForm () {
@@ -9,13 +9,13 @@ function LessonForm () {
     // const [captchaKey, setCaptchaKey] = useState(null);
     const [formSubmitted, setFormSubmitted] = useState(false);
 
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phoneNumber: "",
-        message: "",
-        recaptchaValue: null,
-    });
+    // const [formData, setFormData] = useState({
+    //     name: "",
+    //     email: "",
+    //     phoneNumber: "",
+    //     message: "",
+    //     recaptchaValue: null,
+    // });
 
     // useEffect(() => {
     //   const fetchData = async () => {
