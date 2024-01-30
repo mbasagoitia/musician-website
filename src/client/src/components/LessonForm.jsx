@@ -80,7 +80,6 @@ function LessonForm () {
             type="text"
             placeholder="Enter your name"
             name="name"
-            value="Name"
             required
           />
         </Form.Group>
@@ -91,7 +90,6 @@ function LessonForm () {
             type="email"
             placeholder="Enter your email"
             name="email"
-            value="Email"
             required
           />
         </Form.Group>
@@ -102,7 +100,6 @@ function LessonForm () {
             type="tel"
             placeholder="Enter your phone number"
             name="phoneNumber"
-            value="Phone Number"
           />
         </Form.Group>
   
@@ -113,7 +110,6 @@ function LessonForm () {
             rows={3}
             placeholder="Enter your message"
             name="message"
-            value="Your Message"
             required
           />
         </Form.Group>
