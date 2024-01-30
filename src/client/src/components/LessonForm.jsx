@@ -119,7 +119,7 @@ function LessonForm () {
           onChange={handleCaptchaChange}
         /> */}
   
-        <Button id="submit-btn" type="submit">Submit</Button>
+        <Button id="submit-btn" className="mt-4" type="submit">Submit</Button>
       </Form>
       </>
     ) : (
