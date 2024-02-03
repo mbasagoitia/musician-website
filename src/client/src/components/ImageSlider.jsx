@@ -8,7 +8,7 @@ function ImageSlider () {
   useEffect(() => {
     const fetchMarkdownContent = async () => {
       try {
-        const response = await fetch('/content/pages/sliding_images.md');
+        const response = await fetch('content/pages/sliding_images/sliding_images.md');
         const markdownContent = await response.text();
         const parsedContent = fm(markdownContent);
         setPageContent(parsedContent.attributes);

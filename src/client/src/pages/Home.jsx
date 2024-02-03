@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     const fetchMarkdownContent = async () => {
       try {
-        const response = await fetch('/content/pages/home.md');
+        const response = await fetch('content/pages/home/home.md');
         const markdownContent = await response.text();
         const parsedContent = fm(markdownContent);
         setPageContent(parsedContent.attributes);

@@ -4,13 +4,12 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@sendgrid/mail": "^8.1.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "buffer": "^6.0.3",
-    "dotenv": "^16.4.0",
+    "dotenv": "^16.4.1",
     "front-matter": "^4.0.2",
     "lodash": "^4.17.21",
     "netlify-identity-widget": "^1.9.2",
@@ -19,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-markdown": "^9.0.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "latest",
     "sanitize-html": "^2.11.0",
     "web-vitals": "^2.1.4"
   },
@@ -46,5 +45,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbasagoitia/musician-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbasagoitia/musician-website/issues"
   }
 }
+

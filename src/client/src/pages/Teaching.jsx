@@ -12,7 +12,7 @@ function Teaching() {
   useEffect(() => {
     const fetchMarkdownContent = async () => {
       try {
-        const response = await fetch('/content/pages/teaching.md');
+        const response = await fetch('content/pages/teaching/teaching.md');
         const markdownContent = await response.text();
         const parsedContent = fm(markdownContent);
         setPageContent(parsedContent.attributes);

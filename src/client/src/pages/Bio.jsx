@@ -8,7 +8,7 @@ function Bio () {
     useEffect(() => {
       const fetchMarkdownContent = async () => {
         try {
-          const response = await fetch('/content/pages/bio.md');
+          const response = await fetch('content/pages/bio/bio.md');
           const markdownContent = await response.text();
           const parsedContent = fm(markdownContent);
           setPageContent(parsedContent);

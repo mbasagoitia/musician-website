@@ -9,7 +9,7 @@ function Samples () {
     useEffect(() => {
       const fetchMarkdownContent = async () => {
         try {
-          const response = await fetch('/content/pages/samples.md');
+          const response = await fetch('content/pages/samples/samples.md');
           const markdownContent = await response.text();
           const parsedContent = fm(markdownContent);
           setPageContent(parsedContent.attributes);
