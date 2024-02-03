@@ -23,12 +23,17 @@ collections:
     folder: 'content/pages/bio'
     create: true
     fields:
-      - label: 'Bio Image'
-        name: 'bio_image'
-        widget: 'image'
-      - label: 'Bio'
-        name: 'body'
-        widget: 'markdown'
+    - label: 'Bio Image'
+      name: 'bio_image'
+      widget: 'image'
+    - label: 'Bio'
+      name: 'body'
+      widget: 'markdown'
+    - label: 'Title'
+      name: 'title'
+      widget: 'string'
+      required: false
+
   - name: teaching
     label: Teaching
     folder: 'content/pages/teaching'
