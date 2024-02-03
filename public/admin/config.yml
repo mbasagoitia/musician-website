@@ -23,6 +23,10 @@ collections:
     folder: 'public/content/pages/bio'
     create: true
     fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+        required: false
       - label: 'Bio Image'
         name: 'bio_image'
         widget: 'image'
@@ -34,6 +38,10 @@ collections:
     folder: 'public/content/pages/teaching'
     create: true
     fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+        required: false
       - label: 'Teaching Philosophy'
         name: 'teaching_philosophy'
         widget: 'markdown'
@@ -54,6 +62,10 @@ collections:
     folder: 'public/content/pages/samples'
     create: true
     fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+        required: false
       - label: 'YouTube ID #1'
         name: 'id_1'
         widget: 'string'
@@ -77,6 +89,10 @@ collections:
     folder: 'public/content/pages/sliding_images'
     create: true
     fields:
+      - label: 'Title'
+        name: 'title'
+        widget: 'string'
+        required: false
       - label: 'Images'
         name: 'images'
         widget: 'list'
