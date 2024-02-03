@@ -22,7 +22,7 @@ function Navigation({ navbarStyle, navbarExpanded, setNavbarExpanded }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto w-100 d-flex justify-content-between">
-            {navLinks.map((link) => <Nav.Link href={`#${link.location}`} onClick={() => setNavbarExpanded(false)}>{link.text}</Nav.Link>)}
+            {navLinks.map((link, idx) => <Nav.Link key={idx} href={`#${link.location}`} onClick={() => setNavbarExpanded(false)}>{link.text}</Nav.Link>)}
           </Nav>
         </Navbar.Collapse>
       </Container>
