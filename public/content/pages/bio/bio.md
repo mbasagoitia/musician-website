@@ -3,7 +3,7 @@ bio_image: /images/headshot-2.jpg
 ---
 <p>Dr. Belén Hernández started her musical journey in her native Argentina. She graduated with a degree in violin performance from the Instituto Superior de Música de la Universidad Nacional de Tucumán. She then joined the Orquesta Sinfónica de Salta in 2007 as a full-time violinist.</p>
 
-<p>In 2010 she received the Tarr Award (full tuition scholarship) at Carson-Newman University where she completed a BM in Music Theory, applied violin (2014). During her undergraduate studies, Dr. Hernández was granted the Presser Scholar Award, and became a member of multiple national honor societies, including Pi Kappa Lambda, Alpha Chi, and Omicron Delta Kappa.</p>
+<p>In 2010 she received the Tarr Award (full tuition scholarship) at Carson-Newman University where she completed a BM in Music Theory (2014). During her undergraduate studies, Dr. Hernández was granted the Presser Scholar Award, and became a member of multiple national honor societies, including Pi Kappa Lambda, Alpha Chi, and Omicron Delta Kappa.</p>
 
 <p>Dr. Hernández continued her higher education studies at the University of Northern Colorado where she earned a MM in Violin Performance (2016) and Doctor of Arts in Violin Performance with a secondary emphasis in Orchestral Conducting (2020). Her doctoral dissertation, "<a href="https://digscholarship.unco.edu/dissertations/721/" target='_blank'>Life and Legacy of Luis Gianneo: A Comprehensive Study of His Compositions for Violin</a>,” reflects her deep love for Argentine music. During her time at the University of Northern Colorado, Dr. Hernández served as Dr. Jubal Fulks' Graduate Teaching Assistant. </p>
 
