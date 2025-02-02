@@ -27,7 +27,7 @@ teaching_philosophy: >-
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options--Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
-  Reschedule at least 24 hours before the start of the  lesson. </li> <li>
+  Reschedule at least 24 hours before the start of the  lesson.
 tp_image: /images/teaching-photo-1.jpg
 sp_image: /images/headshot-4.jpg
 contact_image: /images/teaching-photo-2.jpg
