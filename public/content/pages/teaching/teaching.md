@@ -31,6 +31,6 @@ studio_policy: >-
   Practice, practice, practice!</li>
 tp_image: /images/headshot-4.jpg
 sp_image: /images/headshot-1.jpg
-contact_image: /images/headshot-6.jpg
+contact_image: /images/teaching-photo-2.jpg
 ---
 
