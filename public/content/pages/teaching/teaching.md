@@ -29,8 +29,8 @@ studio_policy: >-
   payment method options--Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
   Reschedule at least 24 hours before the start of the  lesson. </li> <li>
   Practice, practice, practice!</li>
-tp_image: /images/headshot-4.jpg
-sp_image: /images/headshot-1.jpg
+tp_image: /images/teaching-photo-1.jpg
+sp_image: /images/headshot-4.jpg
 contact_image: /images/teaching-photo-2.jpg
 ---
 
