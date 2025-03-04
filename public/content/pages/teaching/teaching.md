@@ -22,7 +22,7 @@ teaching_philosophy: >-
   to improve expression, coherence, and memorization.</p> <p>I strongly believe
   that music should ultimately connect the community functioning as a social
   unifier while celebrating diversity. In my studio I intend to create a
-  comfortable atmosphere for everyone to share who they are and make music
+  comfortable atmosphere for everyone to share who they are and play music
   together.</p>
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
