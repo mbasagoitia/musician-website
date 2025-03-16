@@ -26,6 +26,10 @@ teaching_philosophy: >-
   together.</p>
 
 
+  "Tradition is not the worship of ashes, but the preservation of fire."  
+  -Gustav Mahler
+
+
   "Music expresses that which cannot be said and on which it is imposible to be
   silent."       -Victor Hugo</p>
 
