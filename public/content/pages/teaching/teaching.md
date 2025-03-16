@@ -17,7 +17,7 @@ teaching_philosophy: >-
   comfortable and efficient), interdependence of all elements involved in violin
   playing (proportions and balance), and the relationship of mind to muscles
   (mental control over physical movement).</p><p>In my training, I have
-  discovered that understanding the language of music from an analitical point
+  discovered that understanding the language of music from an analytical point
   of view has helped me to better express myself. I encourage musical analysis
   to improve expression, coherence, and memorization.</p> <p>I strongly believe
   that music should ultimately connect the community functioning as a social
@@ -34,7 +34,7 @@ teaching_philosophy: >-
   Beethoven</p>
 
 
-  "Music expresses that which cannot be said and on which it is imposible to be
+  "Music expresses that which cannot be said and on which it is impossible to be
   silent."       -Victor Hugo</p>
 
 
