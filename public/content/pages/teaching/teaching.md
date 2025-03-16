@@ -30,8 +30,8 @@ teaching_philosophy: >-
   silent."       -Victor Hugo</p>
 
 
-  "Music is... a higher revelation than all wisdom and philosophy."   -Ludwig
-  van Beethoven</p>
+  "Music is a higher revelation than all wisdom and philosophy."   -Ludwig van
+  Beethoven</p>
 
 
   "Where words leave off, music begins."     -Heinrich Heine</p>
