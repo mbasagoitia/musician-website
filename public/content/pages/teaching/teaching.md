@@ -26,10 +26,15 @@ teaching_philosophy: >-
   together.</p>
 
 
-
-
   "Music expresses that which cannot be said and on which it is imposible to be
-  silent." Victor Hugo
+  silent." -Victor Hugo
+
+
+  "Music is... a higher revelation than all wisdom and philosophy." -Ludwig van
+  Beethoven
+
+
+  "Without music, life would be a mistake." -Friedrich Nietzsche
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options--Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
