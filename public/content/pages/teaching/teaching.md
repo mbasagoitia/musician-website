@@ -34,6 +34,9 @@ teaching_philosophy: >-
   Beethoven
 
 
+  "Where words leave off, music begins." Heinrich Heine
+
+
   "Without music, life would be a mistake." -Friedrich Nietzsche
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
