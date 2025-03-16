@@ -27,17 +27,17 @@ teaching_philosophy: >-
 
 
   "Music expresses that which cannot be said and on which it is imposible to be
-  silent." -Victor Hugo
+  silent." -Victor Hugo</p>
 
 
   "Music is... a higher revelation than all wisdom and philosophy." -Ludwig van
-  Beethoven
+  Beethoven</p>
 
 
-  "Where words leave off, music begins." Heinrich Heine
+  "Where words leave off, music begins." Heinrich Heine</p>
 
 
-  "Without music, life would be a mistake." -Friedrich Nietzsche
+  "Without music, life would be a mistake." -Friedrich Nietzsche</p>
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options--Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
