@@ -30,12 +30,12 @@ teaching_philosophy: >-
   -Gustav Mahler</p>
 
 
-  "Music expresses that which cannot be said and on which it is imposible to be
-  silent."       -Victor Hugo</p>
-
-
   "Music is a higher revelation than all wisdom and philosophy."   -Ludwig van
   Beethoven</p>
+
+
+  "Music expresses that which cannot be said and on which it is imposible to be
+  silent."       -Victor Hugo</p>
 
 
   "Where words leave off, music begins."     -Heinrich Heine</p>
