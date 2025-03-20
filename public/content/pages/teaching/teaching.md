@@ -38,9 +38,6 @@ teaching_philosophy: >-
   silent."       -Victor Hugo</p>
 
 
-  "Where words leave off, music begins."     -Heinrich Heine</p>
-
-
   "Without music, life would be a mistake."     -Friedrich Nietzsche</p>
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
