@@ -24,21 +24,6 @@ teaching_philosophy: >-
   unifier while celebrating diversity. In my studio I intend to create a
   comfortable atmosphere for everyone to share who they are and play music
   together.</p>
-
-
-  "Tradition is not the worship of ashes, but the preservation of fire."  
-  -Gustav Mahler</p>
-
-
-  "Music is a higher revelation than all wisdom and philosophy."   -Ludwig van
-  Beethoven</p>
-
-
-  "Music expresses that which cannot be said and on which it is impossible to be
-  silent."       -Victor Hugo</p>
-
-
-  "Without music, life would be a mistake."     -Friedrich Nietzsche</p>
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options: Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
