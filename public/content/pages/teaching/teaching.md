@@ -26,10 +26,12 @@ teaching_philosophy: >-
   together.</p>
 
 
-
-
   "Music expresses that which cannot be said and on which it is impossible to be
   silent." — Victor Hugo
+
+
+  \    “Tradition is not the worship of ashes, but the preservation of fire.”  —
+  Gustav Mahler
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options: Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
