@@ -30,7 +30,7 @@ teaching_philosophy: >-
   silent." — Victor Hugo </p>
 
 
-  \    “Tradition is not the worship of ashes, but the preservation of fire.”  —
+  “Tradition is not the worship of ashes, but the preservation of fire.”  —
   Gustav Mahler
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
