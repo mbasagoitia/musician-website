@@ -27,7 +27,7 @@ teaching_philosophy: >-
 
 
   "Music expresses that which cannot be said and on which it is impossible to be
-  silent." — Victor Hugo
+  silent." — Victor Hugo </p>
 
 
   \    “Tradition is not the worship of ashes, but the preservation of fire.”  —
