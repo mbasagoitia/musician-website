@@ -1,37 +1,6 @@
 ---
 title: Teaching
-teaching_philosophy: >-
-  <p>Each person comes to music with different expectations and goals. As a
-  teacher who has worked with early beginners as well as adult students, I try
-  to understand where the student is coming from and help them discover where
-  they want to project themselves. I believe that sharing my genuine passion for
-  music and my love for the violin is the best starting point.  I think of
-  teaching as a discovery journey. The teacher's role should be of assistance in
-  discovering the traditions of the great violinists as well as encouraging
-  students to find their own voice and expression. I commit to helping my
-  students to explore a wide variety of violin playing traditions (violin
-  schools and techniques) and styles (composers and genres). In addition to
-  this, I encourage them to develop their own musical personality and to be
-  aware of their bodies as they engage in sound production.</p> <p>I incorporate
-  body mapping concepts such as naturalness as a guiding principle (finding what
-  is comfortable and efficient), interdependence of all elements involved in
-  violin playing (proportions and balance), and the relationship of mind to
-  muscles (mental control over physical movement).</p><p>In my training, I have
-  discovered that understanding the language of music from an analytical point
-  of view has helped me to better express myself. I encourage musical analysis
-  to improve expression, coherence, and memorization.</p> <p>I strongly believe
-  that music should ultimately connect the community, functioning as a social
-  unifier while celebrating diversity. In my studio I intend to create a
-  comfortable atmosphere for everyone to share who they are and play music
-  together.</p>
-
-
-  "Music expresses that which cannot be said and on which it is impossible to be
-  silent." — Victor Hugo </p>
-
-
-  “Tradition is not the worship of ashes, but the preservation of fire.”  —
-  Gustav Mahler
+teaching_philosophy: "<p>Each person comes to music with different expectations and goals. As a teacher who has worked with early beginners as well as adult students, I try to understand where the student is coming from and help them discover where they want to project themselves. I believe that sharing my genuine passion for music and my love for the violin is the best starting point.  I think of teaching as a discovery journey. The teacher’s role should involve facilitating encounters with the traditions of great musicians as well as encouraging students to find their own voice and expression. I am committed to helping my students explore a wide variety of violin playing traditions (violin schools and techniques) and styles (composers and genres).  In addition to this, I foster the development of their own musical personality and awareness of their bodies as they engage in sound production.\r </p> <p>I incorporate body mapping concepts such as naturalness as a guiding principle (finding what is comfortable and efficient), interdependence of all elements involved in violin playing (proportions and balance), and the relationship of mind to muscles (mental control over physical movement).</p><p>In my training, I have discovered that understanding the language of music from an analytical point of view helps me to better express myself. I encourage musical analysis to improve expression, coherence, and memorization.</p> <p>I strongly believe that music should ultimately connect the community, functioning as a social unifier while celebrating diversity. In my studio I intend to create a comfortable atmosphere for everyone to share who they are and play music together.</p>\n\n\"Music expresses that which cannot be said and on which it is impossible to be silent.\" — Victor Hugo </p>\n\n“Tradition is not the worship of ashes, but the preservation of fire.”  — Gustav Mahler"
 studio_policy: >-
   <li>30/45/60 minutes in-person or virtual lessons offered.</li><li> Multiple
   payment method options: Zelle, Paypal, Venmo, cash, check, etc. </li> <li>
