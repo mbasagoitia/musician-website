@@ -1,5 +1,5 @@
 ---
-bio_image: /images/pic.jpg
+bio_image: /images/picture 2026.jpeg
 ---
 <p>Belén Hernández started her musical journey in her native Argentina under the guidance of Maestro Gustavo Guersman in Tucumán and later with Maestro Luis Roggero in Buenos Aires. She graduated with a degree in violin performance from the Instituto Superior de Música de la Universidad Nacional de Tucumán where she was a member of the university's youth symphony orchestra. She then joined the Orquesta Sinfónica de Salta in 2007 as a full-time violinist.</p>
 
