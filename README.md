@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Musician Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a custom-built portfolio website for a professional musician using Netlify CMS and modern web technologies (React). In 2024, this project was migrated from a previous version using WordPress.
+
+View the site live at [https://belenhernandez-violin.com](https://belenhernandez-violin.com)
 
 ## Available Scripts
 
