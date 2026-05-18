@@ -7,6 +7,6 @@ studio_policy: >-
   Reschedule at least 24 hours before the start of the  lesson.
 tp_image: /images/teaching-photo-1.jpg
 sp_image: /images/headshot-4.jpg
-contact_image: /images/teaching-photo-2.jpg
+contact_image: '/images/chatgpt image may 18, 2026, 06_45_41 pm.png'
 ---
 
